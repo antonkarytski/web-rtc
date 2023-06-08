@@ -1,0 +1,20 @@
+{
+  "name": "webrtc-server",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-modules app.js"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "nanoid": "^4.0.2",
+    "pug": "2.0.0-beta11",
+    "socket.io": "^4.6.2",
+    "ws": "^8.13.0"
+  }
+}
