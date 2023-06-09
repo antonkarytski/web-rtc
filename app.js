@@ -13,10 +13,10 @@ let sessions = {};
 wss.on('connection', (ws) => {
   ws.on('message', (message) => {
     let msg = JSON.parse(message);
-    console.log(msg)
     switch (msg.type) {
       case 'create-session': {
         let sessionId = nanoid();
+        delete sessions[lastSessionId];
         lastSessionId = sessionId
         sessions[sessionId] = {
           head: ws,
